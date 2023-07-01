@@ -1,4 +1,4 @@
-package spring.reactive.springreactive
+package spring.reactive
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

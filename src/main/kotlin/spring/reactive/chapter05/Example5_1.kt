@@ -1,4 +1,4 @@
-package spring.reactive.springreactive.chapter05
+package spring.reactive.chapter05
 
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
