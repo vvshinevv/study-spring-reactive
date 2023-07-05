@@ -10,7 +10,7 @@ fun main() {
     val log = KotlinLogging.logger { }
     Flux
         .interval(Duration.ofMillis(1L))
-        .onBackpressureBuffer()
+        .onBackpressureError()
         .doOnNext { data -> log.info { "# doOnNext: $data" } }
         .publishOn(Schedulers.parallel())
         .subscribe({ data ->

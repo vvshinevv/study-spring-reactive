@@ -10,6 +10,7 @@ fun main() {
     val log = KotlinLogging.logger { }
     Flux.range(1, 5)
         .doOnRequest { data -> log.info { "# doOnRequest: $data" } }
+        .log()
         .subscribe {
             object : BaseSubscriber<Int>() {
                 override fun hookOnSubscribe(subscription: Subscription) {
