@@ -1,4 +1,4 @@
-package chapter14;
+package spring.reactive.chapter14;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
